@@ -5,7 +5,7 @@ use Yii;
 use yii\behaviors\TimestampBehavior;
 use yii\filters\RateLimitInterface;
 use common\models\member\Member;
-use jianyan\basics\common\models\sys\Manager;
+use common\models\sys\Manager;
 
 /**
  * Class AccessToken

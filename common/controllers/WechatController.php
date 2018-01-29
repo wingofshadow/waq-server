@@ -7,7 +7,7 @@ namespace common\controllers;
  * Class WechatController
  * @package common\controllers
  */
-class WechatController extends \jianyan\basics\common\controllers\WechatController
+class WechatController extends common\controllers\WechatController
 {
 
 }

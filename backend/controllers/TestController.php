@@ -5,9 +5,9 @@ use yii;
 use common\helpers\ArithmeticHelper;
 use common\helpers\DataDictionaryHelper;
 use common\helpers\RsaEncryptionHelper;
-use jianyan\basics\common\models\sys\Config;
-use jianyan\basics\common\models\sys\ConfigCate;
-use jianyan\basics\common\models\sys\Manager;
+use common\models\sys\Config;
+use common\models\sys\ConfigCate;
+use common\models\sys\Manager;
 
 /**
  * 测试控制器

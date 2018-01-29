@@ -18,7 +18,7 @@ return [
         ],
         /** ------ 网站公共配置 ------ **/
         'config' => [
-            'class' => 'jianyan\basics\common\models\sys\Config',
+            'class' => 'common\models\sys\Config',
         ],
         /** ------ 文件缓存配置 ------ **/
         'cache' => [
@@ -79,7 +79,7 @@ return [
         ],
         /** ------ 微信SDK ------ **/
         'wechat' => [
-            'class' => 'jianyan\basics\common\components\Wechat',
+            'class' => 'common\components\Wechat',
              'userOptions' => [],  // 用户身份类参数
              'sessionParam' => 'wechatUser', // 微信用户信息将存储在会话在这个密钥
              'returnUrlParam' => '_wechatReturnUrl', // returnUrl 存储在会话中
@@ -88,7 +88,7 @@ return [
     'controllerMap' => [
         // 文件上传公共控制器
         'file' => [
-            'class' => 'jianyan\basics\common\controllers\FileBaseController',
+            'class' => 'common\controllers\FileBaseController',
         ]
     ],
 ];

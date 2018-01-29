@@ -1,6 +1,5 @@
 <?php
 $params = array_merge(
-    require(__DIR__ . '/../../vendor/jianyan74/rageframe-basics/backend/config/params.php'),
     require(__DIR__ . '/../../common/config/params.php'),
     require(__DIR__ . '/../../common/config/params-local.php'),
     require(__DIR__ . '/params.php'),
@@ -18,7 +17,7 @@ return [
             'csrfParam' => '_csrf-backend'
         ],
         'user' => [
-            'identityClass' => 'jianyan\basics\common\models\sys\Manager',
+            'identityClass' => 'common\models\sys\Manager',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
             'loginUrl' => ['site/login'],
@@ -73,11 +72,27 @@ return [
             'itemChildTable' => '{{%sys_auth_item_child}}',
             'ruleTable' => '{{%sys_auth_rule}}',
         ],
+
+        /** ------ 后台操作日志 ------ **/
+        'actionlog' => [
+            'class' => 'common\models\sys\ActionLog',
+        ],
+        'qr' => [
+            'class' => '\Da\QrCode\Component\QrCodeComponent',
+            // ... you can configure more properties of the component here
+        ]
     ],
     'modules' => [
-        /** ------ 会员模块 ------ **/
+//       系统模块
+        'sys' => [
+            'class' => 'backend\modules\sys\Module',
+        ],
+//       会员模块
         'member' => [
             'class' => 'backend\modules\member\Module',
+        ],
+        'nurse' => [
+            'class' => 'backend\modules\nurse\Module',
         ],
     ],
     'params' => $params,

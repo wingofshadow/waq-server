@@ -7,7 +7,7 @@ namespace common\helpers;
  * Class AddonsUrl
  * @package common\helpers
  */
-class AddonsUrl extends \jianyan\basics\common\helpers\AddonsUrl
+class AddonsUrl extends common\helpers\AddonsUrl
 {
 
 }

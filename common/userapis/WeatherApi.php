@@ -10,7 +10,7 @@ use common\helpers\StringHelper;
  * Class WeatherApi
  * @package common\userapis
  */
-class WeatherApi implements \jianyan\basics\common\interfaces\WxMsgInterface
+class WeatherApi implements common\interfaces\WxMsgInterface
 {
     /**
      * 天气接口

@@ -1,5 +1,5 @@
 <?php
-use jianyan\basics\backend\widgets\menu\AddonLeftWidget;
+use backend\widgets\menu\AddonLeftWidget;
 
 if(Yii::$app->params['addon']['info']['type'] != 'plug')
 {

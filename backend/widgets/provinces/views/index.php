@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Html;
-use jianyan\basics\common\models\sys\Provinces;
+use common\models\sys\Provinces;
 
 ?>
 <div class="row">

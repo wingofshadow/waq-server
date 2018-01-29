@@ -7,7 +7,7 @@ namespace common\helpers;
  * Class AddonsHelp
  * @package common\helpers
  */
-class AddonsHelp extends \jianyan\basics\common\helpers\AddonsHelp
+class AddonsHelp extends common\helpers\AddonsHelp
 {
 
 }

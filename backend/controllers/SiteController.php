@@ -5,8 +5,8 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
-use jianyan\basics\common\models\sys\ActionLog;
-use jianyan\basics\backend\modules\sys\models\LoginForm;
+use common\models\sys\ActionLog;
+use backend\modules\sys\models\LoginForm;
 
 /**
  * 站点控制器

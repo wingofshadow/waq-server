@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d745f5769a75668af3f098bae6af60a",
+    "content-hash": "0814061101b075bbe01b934901f69557",
     "packages": [
         {
             "name": "2amigos/qrcode-library",
@@ -1361,53 +1361,6 @@
             "time": "2014-11-20T16:49:30+00:00"
         },
         {
-            "name": "jianyan74/rageframe-basics",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jianyan74/rageframe-basics.git",
-                "reference": "27c9aa76864161aad98efab38778d7a75a058257"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/jianyan74/rageframe-basics/27c9aa76864161aad98efab38778d7a75a058257.zip",
-                "reference": "27c9aa76864161aad98efab38778d7a75a058257",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0",
-                "yiisoft/yii2": ">=2.0.6"
-            },
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "jianyan\\basics\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "简言",
-                    "email": "751393839@qq.com"
-                }
-            ],
-            "description": "RageFrame核心包",
-            "homepage": "https://github.com/jianyan74/rageframe-basics",
-            "keywords": [
-                "cmf",
-                "cms",
-                "jianyan74",
-                "php",
-                "rageframe",
-                "yii",
-                "yii2"
-            ],
-            "time": "2018-01-10T03:35:44+00:00"
-        },
-        {
             "name": "kartik-v/yii2-date-range",
             "version": "1.6.8",
             "source": {
@@ -1937,16 +1890,16 @@
         },
         {
             "name": "lokielse/omnipay-wechatpay",
-            "version": "v1.0.22",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lokielse/omnipay-wechatpay.git",
-                "reference": "025ef36d26048c78221a6d852d9156649a5569a3"
+                "reference": "d16156fc5086124cbaadbefa5b7e23e5d5fef757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/lokielse/omnipay-wechatpay/025ef36d26048c78221a6d852d9156649a5569a3.zip",
-                "reference": "025ef36d26048c78221a6d852d9156649a5569a3",
+                "url": "https://files.phpcomposer.com/files/lokielse/omnipay-wechatpay/d16156fc5086124cbaadbefa5b7e23e5d5fef757.zip",
+                "reference": "d16156fc5086124cbaadbefa5b7e23e5d5fef757",
                 "shasum": ""
             },
             "require": {
@@ -1985,7 +1938,7 @@
                 "wechat",
                 "微信支付"
             ],
-            "time": "2017-09-28T13:25:12+00:00"
+            "time": "2018-01-25T02:37:49+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2278,16 +2231,16 @@
         },
         {
             "name": "overtrue/wechat",
-            "version": "4.0.8",
+            "version": "4.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/wechat.git",
-                "reference": "8c68bfd14695952fd74708f88423356f5ee49efc"
+                "reference": "4e87778d74dc61a50455189bf8fbc7114385adfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/overtrue/wechat/8c68bfd14695952fd74708f88423356f5ee49efc.zip",
-                "reference": "8c68bfd14695952fd74708f88423356f5ee49efc",
+                "url": "https://files.phpcomposer.com/files/overtrue/wechat/4e87778d74dc61a50455189bf8fbc7114385adfb.zip",
+                "reference": "4e87778d74dc61a50455189bf8fbc7114385adfb",
                 "shasum": ""
             },
             "require": {
@@ -2299,8 +2252,7 @@
                 "overtrue/socialite": "~2.0",
                 "php": ">=7.0",
                 "pimple/pimple": "^3.0",
-                "psr/simple-cache": "^1.0",
-                "symfony/cache": "^3.0|^4.0",
+                "symfony/cache": "^3.3|^4.0",
                 "symfony/http-foundation": "^2.7|^3.0|^4.0",
                 "symfony/psr-http-message-bridge": "^0.3|^1.0"
             },
@@ -2337,7 +2289,7 @@
                 "weixin",
                 "weixin-sdk"
             ],
-            "time": "2018-01-09T12:05:05+00:00"
+            "time": "2018-01-26T03:09:10+00:00"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -2403,16 +2355,16 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a"
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/silexphp/Pimple/4d45fb62d96418396ec58ba76e6f065bca16e10a.zip",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a",
+                "url": "https://files.phpcomposer.com/files/silexphp/Pimple/9e403941ef9d65d20cba7d54e29fe906db42cf32.zip",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
                 "shasum": ""
             },
             "require": {
@@ -2449,7 +2401,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2017-07-23T07:32:15+00:00"
+            "time": "2018-01-21T07:42:36+00:00"
         },
         {
             "name": "psr/cache",
@@ -4962,16 +4914,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f"
+                "reference": "11c07feade1d65453e06df3b3b90171d6d982087"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/sebastianbergmann/comparator/b11c729f95109b56a0fe9650c6a63a0fcd8c439f.zip",
-                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
+                "url": "https://files.phpcomposer.com/files/sebastianbergmann/comparator/11c07feade1d65453e06df3b3b90171d6d982087.zip",
+                "reference": "11c07feade1d65453e06df3b3b90171d6d982087",
                 "shasum": ""
             },
             "require": {
@@ -5022,7 +4974,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2017-12-22T14:50:35+00:00"
+            "time": "2018-01-12T06:34:42+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -6062,8 +6014,7 @@
         "kartik-v/yii2-widget-select2": 20,
         "phpoffice/phpexcel": 20,
         "crazyfd/yii2-qiniu": 20,
-        "denisogr/yii2-cronjobs": 20,
-        "jianyan74/rageframe-basics": 20
+        "denisogr/yii2-cronjobs": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

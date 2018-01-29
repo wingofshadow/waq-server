@@ -9,6 +9,12 @@ namespace common\helpers;
  */
 class DateHelper
 {
+
+    public static function getStr($timeStamp, $format = 'Y-m-d H:i:s')
+    {
+        return date($format, $timeStamp);
+    }
+
     /**
      * 获取今日开始时间戳和结束时间戳
      *

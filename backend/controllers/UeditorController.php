@@ -8,7 +8,7 @@ use crazydb\ueditor\Uploader;
  * 百度编辑器
  *
  * Class UEditorController
- * @package jianyan\basics\backend\controllers
+ * @package backend\controllers
  */
 class UeditorController extends \crazydb\ueditor\UEditorController
 {
