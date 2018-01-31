@@ -88,6 +88,10 @@ return [
                     'js' => [],  // 去除 jquery.js
                     'sourcePath' => null,  // 不发布资源
                 ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => [],  // 去除 bootstrap.css
+                    'sourcePath' => null, // 防止在 frontend/web/asset 下生产文件
+                ],
             ],
         ],
     ],
