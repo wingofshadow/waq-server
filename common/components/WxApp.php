@@ -7,7 +7,7 @@ namespace common\components;
  * Class WxApp
  * @package common\components
  */
-class WxApp extends common\components\WxApp
+class WxApp
 {
 
 }

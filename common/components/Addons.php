@@ -7,7 +7,7 @@ namespace common\components;
  * Class Addons
  * @package common\components
  */
-class Addons extends common\components\Addons
+class Addons
 {
 
 }

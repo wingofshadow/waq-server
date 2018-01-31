@@ -70,11 +70,11 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <td><?= $model->name ?></td>
                                 <td><?= $model->level ?></td>
                                 <td><?= $model->age ?></td>
-                                <td><?= $model->from ?></td>
+                                <td><?= $model->province->areaname ?></td>
                                 <td><?= $model->desc ?></td>
                                 <td><?= DateHelper::getStr($model->create_time) ?></td>
                                 <td>
-                                    <a href="<?= Url::to(['personal', 'id' => $model->id]) ?>"><span
+                                    <a href="<?= Url::to(['edit', 'id' => $model->id]) ?>"><span
                                             class="btn btn-info btn-sm">编辑</span></a>&nbsp
                                     <a href="<?= Url::to(['delete', 'id' => $model->id]) ?>"
                                        onclick="rfDelete(this);return false;"><span

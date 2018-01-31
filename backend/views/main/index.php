@@ -64,9 +64,6 @@ AppAsset::register($this);
                             <li>
                                 <a class="J_menuItem" href="<?= Url::to(['sys/manager/up-passwd'])?>"  onclick="$('body').click();">修改密码</a>
                             </li>
-                            <li>
-                                <a class="J_menuItem" href="<?= Url::to(['sys/cache/clear'])?>"  onclick="$('body').click();">清除缓存</a>
-                            </li>
                             <li class="divider"></li>
                             <li><a href="<?= Url::to(['site/logout'])?>" data-method="post">安全退出</a>
                             </li>
@@ -91,14 +88,13 @@ AppAsset::register($this);
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
                     <?= NotifyWidget::widget() ?>
-                    <li class="hidden-xs">
-                        <a href="<?= Yii::$app->request->hostInfo ?>" target="_blank"><i class="fa fa-bookmark"></i>前台</a>
-                    </li>
+                    <?php if($user['id'] == Yii::$app->params['adminAccount']){ ?>
                     <li class="dropdown">
                         <a class="J_menuItem"  href="<?= Url::to(['sys/system/index'])?>">
                             <i class="fa fa-sitemap"></i>系统
                         </a>
                     </li>
+                    <?php } ?>
                     <li class="dropdown hidden-xs">
                         <a class="right-sidebar-toggle" aria-expanded="false">
                             <i class="fa fa-tasks"></i>主题

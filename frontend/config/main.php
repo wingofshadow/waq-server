@@ -29,11 +29,13 @@ return [
             'name' => 'advanced-frontend',
         ],
         'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'traceLevel' => 0,
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['info', 'warning', 'error'],
+                    'logFile' => '/data/logs/waq/front.log',
+                    'logVars' => [],
                 ],
             ],
         ],

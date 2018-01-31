@@ -38,7 +38,7 @@
 
 <?php $this->registerJs(<<<Js
     $(".upload-album-{$boxId}").InitMultiUploader({$config});
-    
+
     $("[data-fancybox]").fancybox({
         // Options will go here
         toolbar  : true,//工具栏

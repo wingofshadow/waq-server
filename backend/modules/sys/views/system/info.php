@@ -98,18 +98,6 @@ $this->params['breadcrumbs'][] = ['label' =>  $this->title];
                         <td><?= Yii::$app->params['exploitVersions']?></td>
                     </tr>
                     <tr>
-                        <td>官网</td>
-                        <td><?= Yii::$app->params['exploitOfficialWebsite']?></td>
-                    </tr>
-                    <tr>
-                        <td>Git@OSC</td>
-                        <td><?= Yii::$app->params['exploitGit@OSC']?></td>
-                    </tr>
-                    <tr>
-                        <td>GitHub</td>
-                        <td><?= Yii::$app->params['exploitGitHub']?></td>
-                    </tr>
-                    <tr>
                         <td>开发者</td>
                         <td><?= Yii::$app->params['exploitName']?></td>
                     </tr>

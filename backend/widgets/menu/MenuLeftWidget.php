@@ -17,7 +17,7 @@ class MenuLeftWidget extends Widget
     {
         return $this->render('menu-left', [
             'models'=> Menu::getMenus(Menu::TYPE_MENU,StatusEnum::ENABLED),
-            'plug' => Addons::getPlugList()
+            //'plug' => Addons::getPlugList()
         ]);
     }
 }

@@ -1,6 +1,7 @@
 <?php
 $this->title = "缓存清理";
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = ['label' => '系统', 'url' => ['/sys/system/index']];
+$this->params['breadcrumbs'][] = ['label' =>  $this->title];
 ?>
 
 <div class="wrapper wrapper-content animated fadeInRight">

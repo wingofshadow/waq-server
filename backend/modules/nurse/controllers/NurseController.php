@@ -3,12 +3,11 @@
 namespace backend\modules\nurse\controllers;
 
 use backend\controllers\MController;
-use Yii;
 use common\models\nurse\Nurse;
-use yii\data\ActiveDataProvider;
+use Yii;
 use yii\data\Pagination;
-use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\NotFoundHttpException;
 
 /**
  * NurseController implements the CRUD actions for Nurse model.
@@ -24,7 +23,7 @@ class NurseController extends MController
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    //'delete' => ['POST'],
                 ],
             ],
         ];
@@ -42,10 +41,12 @@ class NurseController extends MController
         $where = ['like', 'name', $keyword];
 
         // 关联角色查询
-        $data = Nurse::find()->where($where);
+        $data = Nurse::find()
+            ->with("province")
+            ->where($where);
         $pages = new Pagination(['totalCount' => $data->count(), 'pageSize' => $this->_pageSize]);
         $models = $data->offset($pages->offset)
-            ->orderBy('id asc')
+            ->orderBy('id desc')
             ->limit($pages->limit)
             ->all();
 
@@ -70,39 +71,26 @@ class NurseController extends MController
     }
 
     /**
-     * Creates a new Nurse model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
-     */
-    public function actionCreate()
-    {
-        $model = new Nurse();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('create', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Updates an existing Nurse model.
+     * Update/create
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($id)
+    public function actionEdit()
     {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $request = Yii::$app->request;
+        $id = $request->get('id');
+        if (empty($id)) {
+            $model = new Nurse();
+        } else {
+            $model = $this->findModel($id);
         }
 
-        return $this->render('update', [
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['index']);
+        }
+
+        return $this->render('edit', [
             'model' => $model,
         ]);
     }

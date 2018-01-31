@@ -2,7 +2,10 @@
 
 namespace common\models\nurse;
 
+use common\models\sys\Provinces;
 use Yii;
+use yii\behaviors\TimestampBehavior;
+use yii\db\ActiveRecord;
 
 /**
  * This is the model class for table "nurse".
@@ -15,7 +18,7 @@ use Yii;
  * @property int $from 籍贯
  * @property string $portrait 肖像url
  */
-class Nurse extends \yii\db\ActiveRecord
+class Nurse extends ActiveRecord
 {
     /**
      * @inheritdoc
@@ -31,7 +34,7 @@ class Nurse extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['level', 'age', 'from'], 'required'],
+            [['name', 'level', 'age', 'from'], 'required'],
             [['level', 'age', 'from'], 'integer'],
             [['name'], 'string', 'max' => 16],
             [['desc'], 'string', 'max' => 256],
@@ -52,6 +55,28 @@ class Nurse extends \yii\db\ActiveRecord
             'desc' => '描述',
             'from' => '籍贯',
             'portrait' => '肖像url',
+        ];
+    }
+
+    public function getProvince()
+    {
+        return $this->hasOne(Provinces::className(), ['id' => 'from']);
+    }
+
+    /**
+     * 行为插入时间戳
+     * @return array
+     */
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => TimestampBehavior::className(),
+                'attributes' => [
+                    ActiveRecord::EVENT_BEFORE_INSERT => ['create_time', 'update_time'],
+                    ActiveRecord::EVENT_BEFORE_UPDATE => ['update_time'],
+                ],
+            ],
         ];
     }
 }
