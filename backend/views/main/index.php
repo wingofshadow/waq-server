@@ -20,11 +20,7 @@ AppAsset::register($this);
     <!--[if lt IE 8]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
-    <?= Html::cssFile('/resource/backend/css/bootstrap.min.css?v=3.3.5'); ?>
-    <?= Html::cssFile('/resource/backend/css/font-awesome.min.css?v=4.4.0'); ?>
-    <?= Html::cssFile('/resource/backend/css/animate.min.css'); ?>
-    <?= Html::cssFile('/resource/backend/css/style.css?v=4.0.0'); ?>
-    <?= Html::jsFile('/resource/backend/js/jquery-2.0.3.min.js'); ?>
+    <?php $this->head() ?>
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">

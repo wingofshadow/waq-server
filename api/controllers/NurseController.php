@@ -11,9 +11,24 @@ namespace api\controllers;
 
 use common\models\nurse\Nurse;
 use Yii;
+use yii\filters\VerbFilter;
 
 class NurseController extends BaseController
 {
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    //'index' => ['POST'],
+                ],
+            ],
+        ];
+    }
 
     public function actionIndex()
     {

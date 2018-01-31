@@ -142,7 +142,6 @@ $this->params['breadcrumbs'][] = ['label' => $this->title];
         </div>
     </div>
 </div>
-<script src="/resource/backend/other/cropper/bootstrap.min.js"></script>
 <script src="/resource/backend/other/cropper/cropper.js"></script>
 <script src="/resource/backend/other/cropper/sitelogo.js"></script>
 <script src="/resource/backend/other/cropper/html2canvas.min.js" type="text/javascript" charset="utf-8"></script>

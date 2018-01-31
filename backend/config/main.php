@@ -80,7 +80,16 @@ return [
         'qr' => [
             'class' => '\Da\QrCode\Component\QrCodeComponent',
             // ... you can configure more properties of the component here
-        ]
+        ],
+
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'js' => [],  // 去除 jquery.js
+                    'sourcePath' => null,  // 不发布资源
+                ],
+            ],
+        ],
     ],
     'modules' => [
 //       系统模块

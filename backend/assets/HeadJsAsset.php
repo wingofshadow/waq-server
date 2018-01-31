@@ -13,7 +13,7 @@ class HeadJsAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $js = [
-        '/resource/backend/js/jquery-2.0.3.min.js',
+        '/resource/backend/js/jquery.min.js',
     ];
 
     public $jsOptions = [
