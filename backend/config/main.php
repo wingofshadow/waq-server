@@ -93,6 +93,7 @@ return [
                     'sourcePath' => null, // 防止在 frontend/web/asset 下生产文件
                 ],
             ],
+            'linkAssets' => true,
         ],
     ],
     'modules' => [
