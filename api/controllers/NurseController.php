@@ -44,6 +44,7 @@ class NurseController extends BaseController
             ->all();
         foreach ($nurseList as &$nurse) {
             $nurse['province'] = $nurse['province']['areaname'];
+            $nurse['price'] = 3000;
         }
         unset($nurse);
         return $nurseList;
