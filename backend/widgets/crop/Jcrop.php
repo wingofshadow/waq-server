@@ -13,8 +13,8 @@ class Jcrop extends InputWidget
     public $height = 200;
     public $uploadUrl;
     public $maxSize = 2097152; // 2MB
-    public $thumbnailWidth = 300;
-    public $thumbnailHeight = 300;
+    public $thumbnailWidth = 200;
+    public $thumbnailHeight = 200;
     public $cropAreaWidth = '100%';
     public $cropAreaHeight = '300px';
     public $extensions = 'jpeg, jpg, png, gif';
