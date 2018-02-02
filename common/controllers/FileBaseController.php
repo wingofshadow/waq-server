@@ -57,6 +57,19 @@ class FileBaseController extends BaseController
         ];
     }
 
+    public function actions()
+    {
+        return [
+            'crop-upload' => [
+                'class' => 'backend\widgets\crop\actions\Upload',
+                //Path for saving image after cripping
+                'path' => Yii::getAlias("@attachment/crop"),
+                //Path for download
+                'url' => "/attachment/crop",
+            ]
+        ];
+    }
+
     /**
      * 图片上传
      */
